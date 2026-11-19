@@ -30,10 +30,12 @@ window.SITE = {
       desc: { en: "Bot games, entertainment and subscriptions with an exclusive economy system.",
               ar: "بوت العاب و ترفيه و اشتراكات مع نظام اقتصاد حصري." },
       image: "images/teams/team-2", url: "" },
-    { name: { en: "Team Three", ar: "الفريق الثالث" },
-      role: { en: "Designer", ar: "مصمم" },
-      desc: { en: "A creative team making logos and interfaces. I designed layouts and brand visuals and worked closely with the developers. Replace this text with your own story.",
-              ar: "فريق إبداعي يصمّم شعارات وواجهات. صمّمت التخطيطات والهوية البصرية وعملت عن قرب مع المطوّرين. استبدل هذا النص بقصتك أنت." },
+    { name: { en: "The Ghost Team ( 2021 - 2024 )", ar: "فريق الشبح ( 2021 - 2024 )" },
+      role: { en: "Founder", ar: "مؤسس" },
+      desc: { en: "A team that publishes files, explanations, problem solving, crack, etc
+The team was founded in 2021 and closed in 2024 due to disagreements between the founders",
+              ar: "فريق يقوم بنشر ملفات وشروحات وحل مشاكل وكراك واخخ
+تاسس الفريق في 2021 واغلق بـ 2024 بسبب خلافات بين المؤسسين" },
       image: "images/teams/team-3", url: "" }
   ]
 };
