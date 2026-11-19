@@ -32,10 +32,8 @@ window.SITE = {
       image: "images/teams/team-2", url: "" },
     { name: { en: "The Ghost Team ( 2021 - 2024 )", ar: "فريق الشبح ( 2021 - 2024 )" },
       role: { en: "Founder", ar: "مؤسس" },
-      desc: { en: "A team that publishes files, explanations, problem solving, crack, etc
-The team was founded in 2021 and closed in 2024 due to disagreements between the founders",
-              ar: "فريق يقوم بنشر ملفات وشروحات وحل مشاكل وكراك واخخ
-تاسس الفريق في 2021 واغلق بـ 2024 بسبب خلافات بين المؤسسين" },
+      desc: { en: "A team that publishes files, explanations, problem solving, crack, etc The team was founded in 2021 and closed in 2024 due to disagreements between the founders",
+              ar: "فريق يقوم بنشر ملفات وشروحات وحل مشاكل وكراك والخخ تاسس الفريق في 2021 واغلق بـ 2024 بسبب خلافات بين المؤسسين" },
       image: "images/teams/team-3", url: "" }
   ]
 };
