@@ -26,7 +26,7 @@ window.SITE = {
               ar: "الاتحاد العربي للعمل الجماعي ، يسعى فريق تاوت الدولي إلى بناء مجتمع عربي متعاون يجمع بين العمل الجاد والتآخي بروح الأسرة الواحدة." },
       image: "images/teams/team-1", url: "" },
     { name: { en: "Lora", ar: "لورا" },
-      role: { en: "Web developer", ar: "مطوّر ويب" },
+      role: { en: "General Manager", ar: "المدير العام" },
       desc: { en: "Bot games, entertainment and subscriptions with an exclusive economy system.",
               ar: "بوت العاب و ترفيه و اشتراكات مع نظام اقتصاد حصري." },
       image: "images/teams/team-2", url: "" },
