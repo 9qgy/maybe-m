@@ -1,18 +1,5 @@
-// ============================================================
-//  عدّل هذا الملف فقط لتغيير محتوى الموقع.
-//  Edit this file only to change the site content.
-//
-//  الصور / Images:
-//  1) ضع الصورة داخل images/teams أو images/projects
-//     Put the picture inside images/teams or images/projects
-//  2) اكتب مسارها في الحقل image بدون الامتداد، مثل images/teams/my-team
-//     Write its path in "image" without the extension, e.g. images/teams/my-team
-//     (jpg, png, webp تعمل كلها / all work)
-//  إذا لم توجد الصورة يظهر الحرف الأول من الاسم تلقائياً.
-//  If the image is missing, the first letter of the name is shown.
-// ============================================================
 window.SITE = {
-  discord: "YOUR_DISCORD_USERNAME",
+  discord: "5j6x",
 
   projects: [
     { name: { en: "Project One", ar: "المشروع الأول" },
@@ -33,10 +20,10 @@ window.SITE = {
   ],
 
   teams: [
-    { name: { en: "Team One", ar: "الفريق الأول" },
-      role: { en: "Bot developer", ar: "مطوّر بوتات" },
-      desc: { en: "A small team that builds Discord bots for communities. I wrote the commands, the moderation tools and the database layer. Replace this text with your own story.",
-              ar: "فريق صغير يبني بوتات ديسكورد للمجتمعات. كتبت الأوامر وأدوات الإشراف وطبقة قاعدة البيانات. استبدل هذا النص بقصتك أنت." },
+    { name: { en: "Team One", ar: "[TAUT]" },
+      role: { en: "Head of planning and Proposals Department", ar: "رئيس قسم التخطيط والاقتراحات" },
+      desc: { en: "The taut international team seeks to build a cooperative Arab society that combines hard work and brotherhood in the spirit of one family.",
+              ar: "الاتحاد العربي للعمل الجماعي ، يسعى فريق تاوت الدولي إلى بناء مجتمع عربي متعاون يجمع بين العمل الجاد والتآخي بروح الأسرة الواحدة." },
       image: "images/teams/team-1", url: "" },
     { name: { en: "Team Two", ar: "الفريق الثاني" },
       role: { en: "Web developer", ar: "مطوّر ويب" },
