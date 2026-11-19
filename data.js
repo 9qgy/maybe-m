@@ -20,7 +20,7 @@ window.SITE = {
   ],
 
   teams: [
-    { name: { en: "Team One", ar: "[TAUT]" },
+    { name: { en: "[TAUT]", ar: "تاوت" },
       role: { en: "Head of planning and Proposals Department", ar: "رئيس قسم التخطيط والاقتراحات" },
       desc: { en: "The taut international team seeks to build a cooperative Arab society that combines hard work and brotherhood in the spirit of one family.",
               ar: "الاتحاد العربي للعمل الجماعي ، يسعى فريق تاوت الدولي إلى بناء مجتمع عربي متعاون يجمع بين العمل الجاد والتآخي بروح الأسرة الواحدة." },
