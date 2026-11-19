@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohammad – Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="#home" data-i="logo">Mohammad</a>
+    <div class="tools">
+      <button class="pill" id="theme" type="button" data-i="theme"></button>
+      <button class="pill" id="lang" type="button"></button>
+    </div>
+  </header>
+  <nav class="sections" aria-label="Sections">
+    <a href="#home" data-i="navH"></a>
+    <a href="#services" data-i="svc"></a>
+    <a href="#projects" data-i="nav1"></a>
+    <a href="#teams" data-i="tmH"></a>
+    <a href="#about" data-i="nav2"></a>
+    <a href="#contact" data-i="nav3"></a>
+  </nav>
+
+  <main id="home" class="page">
+    <div class="hero">
+      <h1 data-i="h1"></h1>
+      <p class="lead" data-i="lead"></p>
+      <div class="btns">
+        <a class="btn main" href="#projects" data-i="b1"></a>
+        <a class="btn" href="https://github.com/5j6x" target="_blank" rel="noopener" data-i="b2"></a>
+      </div>
+      <div class="demo">
+        <div class="tabs" role="tablist" aria-label="Languages"></div>
+        <pre id="code" tabindex="0" aria-live="polite"></pre>
+        <div class="cap" id="cap"></div>
+      </div>
+    </div>
+  </main>
+
+  <section id="services" class="page">
+    <h2 data-i="svc"></h2>
+    <p class="intro" data-i="svcI"></p>
+    <div class="grid">
+      <div class="card"><h3 data-i="s1t"></h3><p data-i="s1d"></p></div>
+      <div class="card"><h3 data-i="s2t"></h3><p data-i="s2d"></p></div>
+      <div class="card"><h3 data-i="s3t"></h3><p data-i="s3d"></p></div>
+    </div>
+  </section>
+
+  <section id="projects" class="page">
+    <h2 data-i="nav1"></h2>
+    <p class="intro" data-i="prjI"></p>
+    <div class="grid" id="list-projects"></div>
+  </section>
+
+  <section id="teams" class="page">
+    <h2 data-i="tmH"></h2>
+    <p class="intro" data-i="tmI"></p>
+    <div class="grid" id="list-teams"></div>
+  </section>
+
+  <section id="about" class="page">
+    <h2 data-i="aboutH"></h2>
+    <div class="about"><p data-i="a1"></p><p data-i="a2"></p></div>
+  </section>
+
+  <section id="contact" class="page">
+    <h2 data-i="nav3"></h2>
+    <p class="intro" data-i="ctI"></p>
+    <div class="contact">
+      <a class="btn main" href="https://github.com/5j6x" target="_blank" rel="noopener">github.com/5j6x</a>
+      <button class="btn" id="discord" type="button" data-i="dc"></button>
+      <span class="copied" id="copied" role="status"></span>
+    </div>
+  </section>
+
+  <footer><span id="yr"></span> <span data-i="foot"></span></footer>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
