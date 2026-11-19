@@ -5,7 +5,9 @@
 //  الصور / Images:
 //  1) ضع الصورة داخل images/teams أو images/friends أو images/projects
 //     Put the picture inside images/teams, images/friends or images/projects
-//  2) اكتب مسارها في الحقل image  /  Write its path in the "image" field
+//  2) اكتب مسارها في الحقل image بدون الامتداد، مثل images/friends/ali
+//     Write its path in "image" without the extension, e.g. images/friends/ali
+//     (jpg, png, webp تعمل كلها / all work)
 //  إذا لم توجد الصورة يظهر الحرف الأول من الاسم تلقائياً.
 //  If the image is missing, the first letter of the name is shown.
 // ============================================================
@@ -33,27 +35,61 @@ window.SITE = {
   teams: [
     { name: { en: "Team One", ar: "الفريق الأول" },
       role: { en: "Bot developer", ar: "مطوّر بوتات" },
-      desc: { en: "What you built together.", ar: "ما بنيتموه معاً." },
-      image: "images/teams/team-one.jpg", url: "" },
+      desc: { en: "A small team that builds Discord bots for communities. I wrote the commands, the moderation tools and the database layer. Replace this text with your own story.",
+              ar: "فريق صغير يبني بوتات ديسكورد للمجتمعات. كتبت الأوامر وأدوات الإشراف وطبقة قاعدة البيانات. استبدل هذا النص بقصتك أنت." },
+      image: "images/teams/team-1", url: "" },
     { name: { en: "Team Two", ar: "الفريق الثاني" },
       role: { en: "Web developer", ar: "مطوّر ويب" },
-      desc: { en: "What you built together.", ar: "ما بنيتموه معاً." },
-      image: "images/teams/team-two.jpg", url: "" },
+      desc: { en: "A group of developers building websites for small businesses. I handled the front end and the PHP back end, and we shipped every project on time. Replace this text with your own story.",
+              ar: "مجموعة مطوّرين تبني مواقع للأعمال الصغيرة. تولّيت الواجهة الأمامية والجزء الخلفي بـ PHP، وسلّمنا كل مشروع في موعده. استبدل هذا النص بقصتك أنت." },
+      image: "images/teams/team-2", url: "" },
     { name: { en: "Team Three", ar: "الفريق الثالث" },
       role: { en: "Designer", ar: "مصمم" },
-      desc: { en: "What you built together.", ar: "ما بنيتموه معاً." },
-      image: "images/teams/team-three.jpg", url: "" }
+      desc: { en: "A creative team making logos and interfaces. I designed layouts and brand visuals and worked closely with the developers. Replace this text with your own story.",
+              ar: "فريق إبداعي يصمّم شعارات وواجهات. صمّمت التخطيطات والهوية البصرية وعملت عن قرب مع المطوّرين. استبدل هذا النص بقصتك أنت." },
+      image: "images/teams/team-3", url: "" }
   ],
 
   friends: [
     { name: { en: "Friend One", ar: "الصديق الأول" },
       role: { en: "Developer", ar: "مطوّر" },
-      image: "images/friends/friend-one.jpg", url: "" },
+      desc: { en: "A friend and teammate. We share ideas, review each other’s work and help each other learn. Replace this text with their name and what they do.",
+              ar: "صديق وزميل. نتبادل الأفكار ونراجع عمل بعضنا ونساعد بعضنا على التعلّم. استبدل هذا النص باسمه وما يعمله." },
+      image: "images/friends/friend-1", url: "" },
     { name: { en: "Friend Two", ar: "الصديق الثاني" },
       role: { en: "Designer", ar: "مصمم" },
-      image: "images/friends/friend-two.jpg", url: "" },
+      desc: { en: "A friend and teammate. We share ideas, review each other’s work and help each other learn. Replace this text with their name and what they do.",
+              ar: "صديق وزميل. نتبادل الأفكار ونراجع عمل بعضنا ونساعد بعضنا على التعلّم. استبدل هذا النص باسمه وما يعمله." },
+      image: "images/friends/friend-2", url: "" },
     { name: { en: "Friend Three", ar: "الصديق الثالث" },
       role: { en: "Writer", ar: "كاتب" },
-      image: "images/friends/friend-three.jpg", url: "" }
+      desc: { en: "A friend and teammate. We share ideas, review each other’s work and help each other learn. Replace this text with their name and what they do.",
+              ar: "صديق وزميل. نتبادل الأفكار ونراجع عمل بعضنا ونساعد بعضنا على التعلّم. استبدل هذا النص باسمه وما يعمله." },
+      image: "images/friends/friend-3", url: "" },
+    { name: { en: "Friend Four", ar: "الصديق الرابع" },
+      role: { en: "Bot developer", ar: "مطوّر بوتات" },
+      desc: { en: "A friend and teammate. We share ideas, review each other’s work and help each other learn. Replace this text with their name and what they do.",
+              ar: "صديق وزميل. نتبادل الأفكار ونراجع عمل بعضنا ونساعد بعضنا على التعلّم. استبدل هذا النص باسمه وما يعمله." },
+      image: "images/friends/friend-4", url: "" },
+    { name: { en: "Friend Five", ar: "الصديق الخامس" },
+      role: { en: "Developer", ar: "مطوّر" },
+      desc: { en: "A friend and teammate. We share ideas, review each other’s work and help each other learn. Replace this text with their name and what they do.",
+              ar: "صديق وزميل. نتبادل الأفكار ونراجع عمل بعضنا ونساعد بعضنا على التعلّم. استبدل هذا النص باسمه وما يعمله." },
+      image: "images/friends/friend-5", url: "" },
+    { name: { en: "Friend Six", ar: "الصديق السادس" },
+      role: { en: "Designer", ar: "مصمم" },
+      desc: { en: "A friend and teammate. We share ideas, review each other’s work and help each other learn. Replace this text with their name and what they do.",
+              ar: "صديق وزميل. نتبادل الأفكار ونراجع عمل بعضنا ونساعد بعضنا على التعلّم. استبدل هذا النص باسمه وما يعمله." },
+      image: "images/friends/friend-6", url: "" },
+    { name: { en: "Friend Seven", ar: "الصديق السابع" },
+      role: { en: "Writer", ar: "كاتب" },
+      desc: { en: "A friend and teammate. We share ideas, review each other’s work and help each other learn. Replace this text with their name and what they do.",
+              ar: "صديق وزميل. نتبادل الأفكار ونراجع عمل بعضنا ونساعد بعضنا على التعلّم. استبدل هذا النص باسمه وما يعمله." },
+      image: "images/friends/friend-7", url: "" },
+    { name: { en: "Friend Eight", ar: "الصديق الثامن" },
+      role: { en: "Bot developer", ar: "مطوّر بوتات" },
+      desc: { en: "A friend and teammate. We share ideas, review each other’s work and help each other learn. Replace this text with their name and what they do.",
+              ar: "صديق وزميل. نتبادل الأفكار ونراجع عمل بعضنا ونساعد بعضنا على التعلّم. استبدل هذا النص باسمه وما يعمله." },
+      image: "images/friends/friend-8", url: "" }
   ]
 };

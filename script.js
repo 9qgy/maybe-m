@@ -2,8 +2,8 @@
   var DISCORD = SITE.discord;
   var T = {
     en:{title:"Mohammed – Web Developer",svc:"What I do",navH:"Home",svcI:"The three things I work on, and what you get from each.",prjI:"Things I’ve built and published on GitHub. Each card links to the code.",tmI:"Teams I’ve joined, the role I had and what we built together.",frI:"Developers, designers and writers I work and learn with.",ctI:"The best way to reach me is Discord. You can also see my code on GitHub.",tmH:"Teams I’ve worked with",frH:"Friends",s1t:"Bot programming",s1d:"I build Discord bots and automation tools that handle moderation, commands and repetitive tasks for you.",s2t:"Design",s2d:"I design clean interfaces, logos and layouts that look the same on every screen.",s3t:"Article writing",s3d:"I write clear, well-researched articles on programming and technology.",nav1:"Projects",nav2:"About",nav3:"Contact",theme:"Theme",
-      h1:"I build websites that load fast and work everywhere.",
-      lead:"I’m Mohammed, a web developer, bot programmer, designer and article writer, working with HTML, CSS, JavaScript, PHP and Java. I take a project from the first page layout to the server behind it.",
+      h1:"Hi, I’m Mohammed. I code, design and write.",
+      lead:"I build websites and Discord bots, design interfaces and logos, and write articles about programming. Take a look around, and say hello if you want to work together.",
       b1:"See my projects",b2:"GitHub profile",
       
       
@@ -14,8 +14,8 @@
       dc:"Copy Discord username",copied:"Copied: ",show:"Discord: ",foot:"Mohammed. Built with HTML, CSS and JavaScript.",other:"عربي",
       caps:["HTML gives the page its structure.","CSS makes it look right on every screen.","JavaScript makes the page respond to people.","PHP runs on the server and builds dynamic pages.","Java powers larger, long-running applications."]},
     ar:{title:"محمد – مطوّر ويب",svc:"ماذا أقدّم",navH:"الرئيسية",svcI:"الأشياء الثلاثة التي أعمل عليها وما تحصل عليه من كل واحدة.",prjI:"مشاريع بنيتها ونشرتها على GitHub. كل بطاقة تفتح الكود.",tmI:"فرق انضممت إليها ودوري فيها وما بنيناه معاً.",frI:"مطوّرون ومصممون وكتّاب أعمل وأتعلم معهم.",ctI:"أفضل طريقة للتواصل معي هي ديسكورد. وتقدر تشوف كودي على GitHub.",tmH:"فرق عملت معها",frH:"الأصدقاء",s1t:"برمجة البوتات",s1d:"أبني بوتات ديسكورد وأدوات أتمتة تتولى الإشراف والأوامر والمهام المتكررة نيابةً عنك.",s2t:"التصميم",s2d:"أصمّم واجهات وشعارات وتخطيطات نظيفة تظهر بشكل متناسق على كل شاشة.",s3t:"كتابة المقالات",s3d:"أكتب مقالات واضحة ومدروسة عن البرمجة والتقنية.",nav1:"المشاريع",nav2:"نبذة",nav3:"تواصل",theme:"المظهر",
-      h1:"أبني مواقع سريعة وتعمل على كل الأجهزة.",
-      lead:"أنا محمد، مطوّر ويب ومبرمج بوتات ومصمم وكاتب مقالات، أعمل بـ HTML وCSS وJavaScript وPHP وJava. آخذ المشروع من تصميم الصفحة الأولى إلى الخادم الذي يقف خلفه.",
+      h1:"أهلاً، أنا محمد. أبرمج وأصمم وأكتب.",
+      lead:"أبني مواقع وبوتات ديسكورد، وأصمم واجهات وشعارات، وأكتب مقالات عن البرمجة. تجوّل في الموقع، وتواصل معي إذا أردت أن نعمل معاً.",
       b1:"شاهد مشاريعي",b2:"حسابي على GitHub",
       
       
@@ -53,7 +53,11 @@
   function avatar(name, src){
     var box = el("div","avatar"), ini = el("span","",(L(name).trim().charAt(0) || "?").toUpperCase());
     box.appendChild(ini);
-    if (src){ var im = new Image(); im.alt = L(name); im.onload = function(){ ini.remove(); box.appendChild(im); }; im.src = src; }
+    if (src){
+      var im = new Image(), exts = /\.\w+$/.test(src) ? [""] : [".jpg",".jpeg",".png",".webp",".svg"], n = 0;
+      im.alt = L(name); im.onload = function(){ ini.remove(); box.appendChild(im); };
+      (function next(){ if (n < exts.length){ im.onerror = next; im.src = src + exts[n++]; } })();
+    }
     return box;
   }
   function card(it, kind){
